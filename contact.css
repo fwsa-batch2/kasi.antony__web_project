@@ -1,0 +1,19 @@
+body {
+  background-image: url('https://media.gettyimages.com/videos/seamstress-working-with-sewing-machine-video-id1148540854?s=640x640');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.head {
+    background-color: #AF7AC5;
+  }
+ul {
+  list-style-type: none;
+}
+li {
+  float: right;
+}
+li a{
+  display: inline-block;
+  padding: 19px 16px;
+}
