@@ -1,0 +1,20 @@
+
+body {
+  background-image: url('https://media.istockphoto.com/photos/white-cloth-background-and-texture-grooved-of-white-fabric-abstract-picture-id851800414?k=20&m=851800414&s=170667a&w=0&h=04zr_g4QYSsy31_D3bTtsPBfk-nXvCNtVoF5BTRAX2w=');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+     }
+.head {
+    background-color: #AF7AC5;
+  }
+ul {
+  list-style-type: none;
+}
+li {
+  float: right;
+}
+li a{
+  display: inline-block;
+  padding: 19px 16px;
+}

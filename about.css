@@ -1,0 +1,19 @@
+body {
+  background-image: url('https://the-sewing-studio.com/wp-content/uploads/2019/11/sewing-101-scaled.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.head {
+    background-color: #AF7AC5;
+  }
+ul {
+  list-style-type: none;
+}
+li {
+  float: right;
+}
+li a{
+  display: inline-block;
+  padding: 19px 16px;
+}
