@@ -1,5 +1,5 @@
 body {
-  background-image: url('./assets/images/blackmachine.jpeg');
+  background-image: url('./../images/blackmachine.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;

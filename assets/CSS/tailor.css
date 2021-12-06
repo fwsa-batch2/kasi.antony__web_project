@@ -1,6 +1,6 @@
 
 body {
-  background-image: url('./assets/images/white.jpg');
+  background-image: url('./../images/white.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
