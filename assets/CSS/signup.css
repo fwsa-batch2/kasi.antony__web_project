@@ -1,0 +1,52 @@
+#button1{
+    padding: 7px;
+    background-color: #B3B6B7;
+    color: black;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 70px;
+    margin-left: 190px;
+  }
+  #button2{
+    padding: 7px;
+    background-color: #B3B6B7;
+    color: black;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 70px;
+    margin-left: 120px;
+  }
+  #button1:hover{
+    background-color: black;
+    color: white;
+  }
+  #button2:hover{
+    background-color: black;
+    color: white;
+  }
+    body {
+      background-image: url('https://hespokestyle.com/wp-content/uploads/2016/01/mens-suit-jacket-alterations-grey-plaid-suit-blue-striped-tie-business-outfit-idea-5.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    span
+    {
+      background-color: #AF7AC5;
+    }
+    ul {
+        list-style-type: none;
+      }
+      li {
+        float: right;
+      }
+      li a{
+        display: inline-block;
+        padding: 19px 16px;
+        text-decoration: none;
+      }
+input{
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+}

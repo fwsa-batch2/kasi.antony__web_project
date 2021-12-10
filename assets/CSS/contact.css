@@ -16,4 +16,9 @@ li {
 li a{
   display: inline-block;
   padding: 19px 16px;
+  text-decoration: none;
+}
+input.comments{
+  width: 180px;
+  height: 100px;
 }

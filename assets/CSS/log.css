@@ -8,13 +8,17 @@ body {
   padding:5px;
   background-color: #85C1E9;
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 140px;
 }
 #button2{
   padding: 5px;
   background-color: #85C1E9;
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
+  width: 100px;
+  margin-right: 40px;
 }
 #button1:hover{
   background-color: orange;
@@ -34,4 +38,9 @@ li {
 li a{
   display: inline-block;
   padding: 19px 16px;
+}
+input{
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
 }
