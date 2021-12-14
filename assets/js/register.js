@@ -1,8 +1,9 @@
 let array = []
 function recoverDetails() {
 
-    let details=localStorage.getItem("userCredentials");
+    let details=localStorage.getItem("USERDETAIL");
     let detailstoArray=JSON.parse(details)
+
 
     if ( detailstoArray==null ) {
         array=[]
@@ -10,7 +11,9 @@ function recoverDetails() {
     else {
         array=detailstoArray
     }
+
 }
+
 
 
 
@@ -28,10 +31,7 @@ function register() {
         "confirmpassword": password2,
     }
 
-    array.push(userDetails);
-    const accountdetails = JSON.stringify(array);
-    localStorage.setItem("userCredentials",accountdetails);
-
+    
     if (password1 != password2) {
         alert("Password and Confirm Password does not match");
         return;
@@ -39,59 +39,33 @@ function register() {
 
     const isExist = isEmailALreadyExist(email);
 
-    if (isExist) {
+    if (isExist == true) {
         alert("Email Id Already Registered");
         return;
     }
-
-
     
+    array.push(userDetails);
+    const accountdetails = JSON.stringify(array);
+    localStorage.setItem("USERDETAIL",accountdetails);
+ 
 
 
 }
-recoverDetails()
-
-function passwordvalidation(password1, password2) {
-
-
-    if (password1 == password2) {
-        console.log("Your password matched")
-        return true;
-    }
-    else {
-        console.log("Your password does not matched")
-        return false;
-    }
-}
-
-
+recoverDetails();
 
 function isEmailALreadyExist(currentEmail) {
-
     let isExist = false;
-
-    const userList = JSON.parse(localStorage.getItem("userCredentials"));
-
+    const userList = JSON.parse(localStorage.getItem("USERDETAIL"));
     if (userList != null) {
-
         for (i = 0; i < userList.length; i++) {
-
             const user = userList[i];
-            const email = user.email_id;
-
-
+            const email = user.Email;
             if (currentEmail == email) {
-
                 isExist = true;
                 break;
-
             }
-
-
         }
 
     }
-
     return isExist;
-
 }

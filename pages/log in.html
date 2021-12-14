@@ -25,20 +25,19 @@
           </span>
         </font>
     <br><br>
-    <form>
+    <form onsubmit="usercheck()">
       <table border="0" style="color: white">
-         <tr><th>USER NAME</th><td><input type="text" placeholder="USER NAME"></td></tr>
-         <tr><th>PASS WORD</th><td><input type="password" placeholder="PASSWORD"></td></tr>
-         <tr><th>CONFIRM PASSWORD</th><td><input type="password"  placeholder="Confirm password"></td></tr>
-         <tr><th>MOBILE NUMBER</th><td><input type="text" placeholder="**********"></td></tr>
+         <tr><th>USER NAME</th><td><input type="text" placeholder="USER NAME" id="name" ></td></tr>
+         <tr><th>PASS WORD</th><td><input type="password" placeholder="PASSWORD" id="password" ></td></tr>
          </table>
-<pre>     <a href="./../pages/log in.html"><input type="button" value="clear" id="button1"></a>                       <input type="button" value="SUBMIT" id="button2"></pre>
+              <a href="./../pages/log in.html"><input type="button" value="clear" id="button1"></a>   <input type="submit" value="submit" id="button2">
 
          </form>
        <font size="5" style="color: White">New student?<a href="sign up.html">
            Click Here
          </a>
        </font>
+       <script src="./../assets/js/login.js"></script>
     </body>
 
 </html>
