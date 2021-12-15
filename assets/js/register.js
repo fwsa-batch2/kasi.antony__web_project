@@ -19,12 +19,19 @@ function recoverDetails() {
 
 function register() {
     event.preventDefault();
-
-    const username = document.getElementById("name").value;
+    const name = document.getElementById("name").value;
+    const dob = document.getElementById("dob").value;
+    const address = document.getElementById("address").value;
+    const age = document.getElementById("age").value;
+    const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
     let password1 = document.getElementById("password").value;
     let password2 = document.getElementById("confirmpassword").value;
     let userDetails = {
+        "Name":name,
+        "DATE":dob,
+        "Address":address,
+        "Age":age,
         "userName": username,
         "Email": email,
         "createpassword": password1,
@@ -43,7 +50,7 @@ function register() {
         alert("Email Id Already Registered");
         return;
     }
-    
+
     array.push(userDetails);
     const accountdetails = JSON.stringify(array);
     localStorage.setItem("USERDETAIL",accountdetails);
@@ -65,7 +72,6 @@ function isEmailALreadyExist(currentEmail) {
                 break;
             }
         }
-
     }
     return isExist;
 }

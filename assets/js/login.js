@@ -4,12 +4,19 @@ function usercheck() {
     const usena1 = document.getElementById("name").value;
     const paswd1 = document.getElementById("password").value;
     let userdetail = JSON.parse(localStorage.getItem("USERDETAIL"));
-    let length = userdetail.length
 
-    let userexist = false;
+    
+    if (userdetail == null){
+        alert("Invalid username or password")
+        window.location.href="./../assets/pages/sign up.html"
+        return null;
+    }
+    let length = userdetail.length;
 
     for(i=0 ; i<length ; i++){
 
+        
+        let userexist = false;
         let user=userdetail[i].userName;
         let password=userdetail[i].createpassword;
 

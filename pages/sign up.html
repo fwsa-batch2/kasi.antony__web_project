@@ -31,18 +31,19 @@
     <form onsubmit="register()">
       <table class="home">
         
-         <tr><th>NAME</th><td><input type="text" placeholder="ENTER YOUR NAME" ></td></tr>
-         <tr><th>EMAIL-ID</th><td><input type="email" placeholder="ENTER YOUR EMAIL-ID" id="email" ></td></tr>
-         <tr><th>DISTRICT</th><td><input type="text"  placeholder="ENTER YOUR DISTRICT"></td></tr>
-         <tr><th>D.O.B</th><td><input type="date" min="1921-10-10" max="2021-12-07" id="dob" ></td></tr>
-         <tr><th>ADDRESS</th><td><input type="text" name="name" placeholder="ENTER YOUR ADDRESS" ></td></tr>
-         <tr><th>USER  NAME</th><td><input type="text" placeholder="ENTER YOUR USER NAME" id="name" ></td></tr>
-         <tr><th>PASSWORD</th><td><input type="password"  placeholder="ENTER YOUR Password" id="password" ></td></tr>
-         <tr><th>CONFIRM PASSWORD</th><td><input type="password" name="name" placeholder="Confirm the password" id="confirmpassword" ></td></tr>
-         <tr><th>AGE</th><td><input type="number" name="name" placeholder="ENTER YOUR AGE" ></td></tr>
+         <tr><th>NAME</th><td><input type="text" placeholder="ENTER YOUR NAME" id="name" pattern="[A-Za-z].{3,}" required></td></tr>
+         <tr><th>EMAIL-ID</th><td><input type="email" placeholder="ENTER YOUR EMAIL-ID" id="email" required ></td></tr>
+         
+         <tr><th>D.O.B</th><td><input type="date" min="1921-10-10" max="2021-12-07" id="dob" required ></td></tr>
+         <tr><th>ADDRESS</th><td><input type="text" name="name" placeholder="ENTER YOUR ADDRESS" id="address" required ></td></tr>
+         <tr><th>USER  NAME</th><td><input type="text" placeholder="ENTER YOUR USER NAME" id="username" pattern="[A-Za-z0-9].{3,18}" required ></td></tr>
+         <tr><th>PASSWORD</th><td><input type="password"  placeholder="ENTER YOUR Password" id="password"  minlength="8" maxlength="12" required ></td></tr>
+         <tr><th>CONFIRM PASSWORD</th><td><input type="password" name="name" placeholder="Confirm the password" id="confirmpassword" required ></td></tr>
+         <tr><th>AGE</th><td><input type="number" name="name" placeholder="ENTER YOUR AGE" id="age" required ></td></tr>
   
       </table>
     </br>
+    <div id="nam1"></div>
       <a href="./../pages/Tailoring.html"><b>
         <input type="button" value="back" id="button1">
       </b></a>
