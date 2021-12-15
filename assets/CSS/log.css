@@ -1,5 +1,5 @@
 body {
-  background-image: url('/home/kasiantony/Desktop/moderntailorsapp-ui/assets/images/bluemachine.jpeg');
+  background-image: url('./../images/bluemachine.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
