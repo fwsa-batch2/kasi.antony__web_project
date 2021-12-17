@@ -56,7 +56,6 @@ function register() {
     array.push(userDetails);
     const accountdetails = JSON.stringify(array);
     localStorage.setItem("USERDETAIL",accountdetails);
-    
     window.location.href="log in.html"
 
     console.table(userDetails);
