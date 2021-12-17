@@ -21,6 +21,7 @@ function usercheck() {
             userexist = true;
             localStorage.setItem("USERCHECK",usena1);
             alert("logged in successfully")
+            
             window.location.href="Tailoring.html"
             console.log(usena1);
             console.log(userexist);
