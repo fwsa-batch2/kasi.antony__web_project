@@ -1,22 +1,19 @@
 function usercheck() {
     event.preventDefault();
+    console.group("usercheck");
 
     const usena1 = document.getElementById("name").value;
     const paswd1 = document.getElementById("password").value;
     let userdetail = JSON.parse(localStorage.getItem("USERDETAIL"));
-
-    
-    if (userdetail == null){
-        alert("Invalid username or password")
-        window.location.href="./../assets/pages/sign up.html"
-        return null;
-    }
     let length = userdetail.length;
 
-    for(i=0 ; i<length ; i++){
+    let userexist = false;
+    
+
+    for(i=0 ; i<length ; i++) {
 
         
-        let userexist = false;
+        
         let user=userdetail[i].userName;
         let password=userdetail[i].createpassword;
 
@@ -24,16 +21,19 @@ function usercheck() {
             userexist = true;
             localStorage.setItem("USERCHECK",usena1);
             alert("logged in successfully")
-            window.location.href="./../assets/pages/Tailoring.html"
+            window.location.href="Tailoring.html"
+            console.log(usena1);
+            console.log(userexist);
             break;
         }
-        else{
-        alert("Username or password invalid")
-        return null;
-        }
-
+        console.error(userexist);
     }
 
-    
+    if (userexist == false){
+        alert("Username or Password Invalid")
+        return null;
+    }
+   
+    console.groupEnd("usercheck");
 
 }

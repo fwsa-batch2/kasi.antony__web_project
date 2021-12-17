@@ -1,6 +1,6 @@
 let array = []
 function recoverDetails() {
-
+    console.group("recoverdetails");
     let details=localStorage.getItem("USERDETAIL");
     let detailstoArray=JSON.parse(details)
 
@@ -11,7 +11,8 @@ function recoverDetails() {
     else {
         array=detailstoArray
     }
-
+    console.table(details);
+    console.groupEnd("recoverdetails");
 }
 
 
@@ -19,6 +20,7 @@ function recoverDetails() {
 
 function register() {
     event.preventDefault();
+    console.group("Register");
     const name = document.getElementById("name").value;
     const dob = document.getElementById("dob").value;
     const address = document.getElementById("address").value;
@@ -54,13 +56,19 @@ function register() {
     array.push(userDetails);
     const accountdetails = JSON.stringify(array);
     localStorage.setItem("USERDETAIL",accountdetails);
- 
+    window.location.href="log in.html"
 
+    console.table(userDetails);
+    console.log(isExist);
+    console.groupEnd("Register");
 
 }
 recoverDetails();
 
 function isEmailALreadyExist(currentEmail) {
+
+    console.group("IsExist");
+
     let isExist = false;
     const userList = JSON.parse(localStorage.getItem("USERDETAIL"));
     if (userList != null) {
@@ -73,5 +81,8 @@ function isEmailALreadyExist(currentEmail) {
             }
         }
     }
+    console.log(isExist);
+    console.groupEnd("IsExist");
     return isExist;
+    
 }

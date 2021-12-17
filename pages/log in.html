@@ -27,8 +27,8 @@
     <br><br>
     <form onsubmit="usercheck()">
       <table border="0" style="color: white">
-         <tr><th>USER NAME</th><td><input type="text" placeholder="USER NAME" id="name" ></td></tr>
-         <tr><th>PASS WORD</th><td><input type="password" placeholder="PASSWORD" id="password" ></td></tr>
+         <tr><th>USER NAME</th><td><input type="text" placeholder="USER NAME" id="name" pattern="[A-Za-z0-9].{3,18}" required></td></tr>
+         <tr><th>PASS WORD</th><td><input type="password" placeholder="PASSWORD" id="password" pattern="[A-Za-z0-9].{3,12}" required></td></tr>
          </table>
               <a href="./../pages/log in.html"><input type="button" value="clear" id="button1"></a>   <input type="submit" value="submit" id="button2">
 
