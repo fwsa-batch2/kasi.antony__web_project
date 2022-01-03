@@ -22,25 +22,28 @@ function register() {
     event.preventDefault();
     console.group("Register");
     const name = document.getElementById("name").value;
-    const dob = document.getElementById("dob").value;
-    const address = document.getElementById("address").value;
-    const age = document.getElementById("age").value;
+    const number = document.getElementById("phone").value;
+    const country = document.getElementById("country").value;
+    const state = document.getElementById("state").value;
+    const town = document.getElementById("town").value;
     const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
+    const zipcode=document.getElementById("zipcode").value;
     let password1 = document.getElementById("password").value;
     let password2 = document.getElementById("confirmpassword").value;
     let userDetails = {
         "Name":name,
-        "DATE":dob,
-        "Address":address,
-        "Age":age,
+        "Contact":number,
+        "Country":country,
+        "State":state,
+        "Town":town,
+        "ZipcODE":zipcode,
         "userName": username,
         "Email": email,
-        "createpassword": password1,
+        "password": password1,
         "confirmpassword": password2,
     }
 
-    
     if (password1 != password2) {
         alert("Password and Confirm Password does not match");
         return;
@@ -52,6 +55,14 @@ function register() {
         alert("Email Id Already Registered");
         return;
     }
+
+    let userexist = isUserExist(username);
+
+    if (userexist == true) {
+        alert("User Name Already registered");
+        return;
+    }
+
 
     array.push(userDetails);
     const accountdetails = JSON.stringify(array);
@@ -86,4 +97,21 @@ function isEmailALreadyExist(currentEmail) {
     console.groupEnd("IsExist");
     return isExist;
     
+}
+
+function isUserExist(currentUser) {
+
+    let userExist = false;
+
+    const List = JSON.parse(localStorage.getItem("USERDETAIL"));
+    if (List != null) {
+        for (i = 0; i<List.length; i++) {
+            const user=List[i].userName;
+            if (currentUser == user){
+                userExist = true;
+                break;
+            }
+        }
+    }
+    return userExist;
 }

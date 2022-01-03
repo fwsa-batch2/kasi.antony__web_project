@@ -1,57 +1,148 @@
-#button1{
-    padding: 7px;
-    background-color: #B3B6B7;
-    color: black;
-    font-size: 15px;
-    border-radius: 20px;
-    width: 70px;
-    margin-left: 190px;
-  }
-  #button2{
-    padding: 7px;
-    background-color: #B3B6B7;
-    color: black;
-    font-size: 15px;
-    border-radius: 20px;
-    width: 70px;
-    margin-left: 120px;
-  }
-  #button1:hover{
-    background-color: black;
-    color: white;
-  }
-  #button2:hover{
-    background-color: black;
-    color: white;
-  }
-    body {
-      background-image: url('https://hespokestyle.com/wp-content/uploads/2016/01/mens-suit-jacket-alterations-grey-plaid-suit-blue-striped-tie-business-outfit-idea-5.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-    }
-    span
-    {
-      background-color: #AF7AC5;
-    }
-    ul {
-        list-style-type: none;
-      }
-      li {
-        float: right;
-      }
-      li a{
-        display: inline-block;
-        padding: 19px 16px;
-        text-decoration: none;
-      }
-input{
-  width: 280px;
-  height: 40px;
-  border-radius: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-.select{
-  width: 280px;
-  height: 40px;
+
+body {
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./../images/machine.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+
+}
+.wrapper{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+header {
+  background: transparent;
+  height: 110px;
+  width: 240px;
   border-radius: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: #F4F6F7 ;
+  position: fixed;
+  z-index: 12;
+  border-bottom: 2px solid white;
+}
+.logo {
+  width: 20%;
+  float: left;
+  line-height: 100px;
+}
+
+.heading h2 {
+  padding-top: 2%;
+  font-size: 50px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+}
+.sign-in {
+  padding-top: 6px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+.sign-in a{
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 600;
+  color: #3498DB ;
+
+}
+.reg{
+  max-width: 800px;
+  padding: 25px 30px;
+  margin-left: 28%;
+  background: transparent;
+  border: 1px solid #F4F6F7 ;
+  border-radius: 10px;
+  
+}
+.reg form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: space-between;
+}
+.user-details .col-1-1{
+  margin: 10px 0 10px 0 ;
+  width: calc(700px / 2 - 10px);
+}
+.user-details .col-1-1 input {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 15px;
+  border-bottom-width: 3px;
+  transition: all 0.4s ease;
+}
+.user-details .col-1-1 input:hover {
+  border-color: #AF7AC5;
+}
+.user-details {
+  text-align: left;
+}
+.user-details .col-1-1 .details{
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.user-details .col-1-1 .details input .name-1{
+  width: 1000px;
+}
+.user-details .col-1-1 i {
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+form .button-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+form .button1 input {
+  width: 250px;
+  height: 50px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #85C1E9;
+}
+.button1 input:hover{
+  background-color: tomato;
+}
+form .button input {
+
+  width: 250px;
+  height: 50px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-left: 220px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #85C1E9;
+}
+.button input:hover{
+  background: greenyellow;
+
 }

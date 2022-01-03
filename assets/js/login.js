@@ -15,7 +15,7 @@ function usercheck() {
         
         
         let user=userdetail[i].userName;
-        let password=userdetail[i].createpassword;
+        let password=userdetail[i].password;
 
         if(usena1 == user && paswd1 == password){
             userexist = true;

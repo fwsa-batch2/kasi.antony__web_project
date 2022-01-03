@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>
-  Modern tailors
-</title>
-<link rel="stylesheet" href="./../assets/CSS/log.css">
-</head>
-  <body link="white" alink="#85C1E9" vlink="white">
-  </br>
-</br>
-    <img src="./../assets/images/Logo.png" width="100" height="100" align="left"><font size="20" style="color: white">MODERN TAILORS</font></br>
-    <ul>
-      <li style="float: left"><font size="5" style="color: red">THE MENS BOUTIQUE</font></li>
-       <font face="cinzel" size="4">
-        <li><a href="contact.html">CONTACT US</a></li>
-        <li><a href="sign up.html">REG FORM</a></li>
-        <li><a href="About us.html">ABOUT US</a></li>
-        <li><a href="Tailoring.html">HOME</a></li>
-        <br><br><br>
-      </font></ul>
-        <font size="8" face="verdana" style="color: white">
-          <span class="head">
-          LOG IN
-          </span>
-        </font>
-    <br><br>
-    <form onsubmit="usercheck()">
-      <table border="0" style="color: white">
-         <tr><th>USER NAME</th><td><input type="text" placeholder="USER NAME" id="name" pattern="[A-Za-z0-9].{3,18}" required></td></tr>
-         <tr><th>PASS WORD</th><td><input type="password" placeholder="PASSWORD" id="password" pattern="[A-Za-z0-9].{3,12}" required></td></tr>
-         </table>
-              <a href="./../pages/log in.html"><input type="button" value="clear" id="button1"></a>   <input type="submit" value="submit" id="button2">
+    <head>
+        <title>
+            Modern tailors
+        </title>   
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="icon" href="./../assets/images/Logo-removebg-preview.png">
+            <link rel="stylesheet" href="./../assets/CSS/log.css">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+    </head>
+        <body>
+            <div class="main">
+            <header>
 
-         </form>
-       <font size="5" style="color: White">New student?<a href="sign up.html">
-
-           Click Here
-         </a></br>
-         Forget password?
-         <a href="">Click here</a>
-       </font>
-       <script src="./../assets/js/login.js"></script>
-    </body>
-
+                <div class="wrapper" >
+                    <div class="logo">
+                        <img src="./../assets/images/LogoMakr.png" alt="modern tailors" width="83%" height="83%">
+                    </div>
+                </div>
+                </header>
+                <div class="heading">
+                    <h2>SIGN IN</h2>
+                </div>
+                <div class="login">
+                    <a href="Register.html">New Student</a> | <a href="">Forget Password</a>
+                </div>
+                <div class="reg">
+                    <form onsubmit="usercheck()">
+                        <div class="user-details">
+                            <div class="col-1-1">
+                                <i class="fa fa-user icon"></i>
+                                <span class="details">User name</span>
+                                <input type="text" placeholder="User name"  id="name" pattern="[a-zA-Z].{2,20}" required>
+                            </div>
+                            <div class="col-1-1">
+                                <i class="fa fa-lock icon"></i>
+                                <span class="details">Password</span>
+                                <input type="password" placeholder="Confirm password" id="password" pattern="[a-zA-Z0-9@.\-_].{8,12}" required>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
+                    </div>
+            </div>
+            <script src="./../../moderntailorsapp-ui/assets/js/login.js"></script>
+        </body>
 </html>
