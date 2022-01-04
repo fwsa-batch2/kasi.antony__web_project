@@ -63,7 +63,7 @@ header {
   background: transparent;
   border: 1px solid #F4F6F7 ;
   border-radius: 10px;
-  
+  box-shadow: 0px 0px 20px rgb(12,12,12);
 }
 .reg form .user-details{
   display: flex;
