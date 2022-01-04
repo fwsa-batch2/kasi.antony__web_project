@@ -19,7 +19,9 @@ function recoverDetails() {
 
 
 function register() {
+
     event.preventDefault();
+
     console.group("Register");
     const name = document.getElementById("name").value;
     const number = document.getElementById("phone").value;
@@ -51,14 +53,14 @@ function register() {
 
     const isExist = isEmailALreadyExist(email);
 
-    if (isExist == true) {
+    if (isExist) {
         alert("Email Id Already Registered");
         return;
     }
 
     let userexist = isUserExist(username);
 
-    if (userexist == true) {
+    if (userexist) {
         alert("User Name Already registered");
         return;
     }
@@ -68,8 +70,8 @@ function register() {
     const accountdetails = JSON.stringify(array);
     localStorage.setItem("USERDETAIL",accountdetails);
 
-    window.location.href="log in.html"
-    
+    window.location.href="../../pages/log in.html";
+
     console.table(userDetails);
     console.log(isExist);
     console.groupEnd("Register");
@@ -105,7 +107,7 @@ function isUserExist(currentUser) {
 
     const List = JSON.parse(localStorage.getItem("USERDETAIL"));
     if (List != null) {
-        for (i = 0; i<List.length; i++) {
+        for (let i = 0; i<List.length; i++) {
             const user=List[i].userName;
             if (currentUser == user){
                 userExist = true;

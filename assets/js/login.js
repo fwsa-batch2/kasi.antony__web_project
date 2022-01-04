@@ -38,3 +38,13 @@ function usercheck() {
     console.groupEnd("usercheck");
 
 }
+
+function showpassword() {
+    let checkbox = document.getElementById("checkbox");
+    if (checkbox.checked) {
+        document.getElementById("password").type = "text";
+    }
+    else{
+        document.getElementById("password").type = "password"
+    }
+}
