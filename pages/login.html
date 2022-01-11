@@ -17,7 +17,7 @@
 
                 <div class="wrapper" >
                     <div class="logo">
-                        <img src="./../assets/images/LogoMakr.png" alt="modern tailors" width="83%" height="83%">
+                        <img src="./../assets/images/LogoMakr.png" width="83%" height="83%">
                     </div>
                 </div>
                 </header>
@@ -25,7 +25,7 @@
                     <h2>SIGN IN</h2>
                 </div>
                 <div class="login">
-                    <a href="./../index.html">New Student</a> | <a href="">Forget Password</a>
+                    <a href="./../../moderntailorsapp-ui/index.html">New Student</a> | <a href="">Forget Password</a>
                 </div>
                 <div class="reg">
                     <form onsubmit="usercheck()">
@@ -33,13 +33,19 @@
                             <div class="col-1-1">
                                 <i class="fa fa-user icon"></i>
                                 <span class="details">User name</span>
-                                <input type="text" placeholder="User name"  id="name" pattern="[a-zA-Z].{2,20}" required>
+                                <input type="text" placeholder="User name"  id="name" pattern="[a-zA-Z].{2,20}" autofocus required>
                             </div>
                             <div class="col-1-1">
                                 <i class="fa fa-lock icon"></i>
                                 <span class="details">Password</span>
-                                <input type="password" placeholder="Confirm password" id="password" pattern="[a-zA-Z0-9@.\-_].{8,12}" required>
+                                <input type="password" placeholder="password" id="password" pattern="[a-zA-Z0-9@.\-_].{8,12}" required>
                             </div>
+                            
+                        <div class="check">
+                            <input type="checkbox" id="checkbox" onchange="showpassword()">
+                            <label>showpassword</label>
+                        </div>
+                        <div id="error"></div>
                         </div>
                         <div class="button">
                             <input type="submit" value="submit">

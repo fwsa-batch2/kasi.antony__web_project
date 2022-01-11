@@ -6,7 +6,7 @@
 
 body {
   text-align: center;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./../images/machine_2.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./../images/machine_2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -60,7 +60,7 @@ header {
 .reg{
   max-width: 350px;
   padding: 25px 30px;
-  margin-left: 39%;
+  margin-left: 39.5%;
   margin-top: 3%;
   color: white;
   background: transparent;
@@ -73,7 +73,7 @@ header {
   justify-content: space-between;
 }
 .user-details .col-1-1{
-  margin: 10px 0 10px 0;
+  margin: 10px 0 0 0;
   width: calc(700px / 2 - 10px);
 }
 .user-details .col-1-1 input {
@@ -84,7 +84,8 @@ header {
   border-radius: 20px;
   border: 1px solid #ccc;
   padding-left: 15px;
-  font-size: 15px;
+  font-size: 17px;
+  font-family: sans-serif;
   border-bottom-width: 3px;
   transition: all 0.4s ease;
 }
@@ -96,7 +97,7 @@ header {
 }
 .user-details .col-1-1 .details{
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .user-details .col-1-1 i {
   margin-left: 15px;
@@ -119,4 +120,27 @@ form .button input {
 .button input:hover{
   background: greenyellow;
 
+}
+#error {
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: left;
+  font-weight: 550;
+  font-family: sans-serif;
+  color: #E74C3C ;
+  display: none;
+  transition: all 0.5s ease;
+}
+.check {
+  margin-left: 15px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+.check input{
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
 }

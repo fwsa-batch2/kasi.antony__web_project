@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #F0F3F4  ;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.logo {
+    width: 13%;
+    background-color: white;
+    border-right: 2px solid #F0F3F4;
+}
+.logo img{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right: 35px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-style: sans-serif;
+    padding: 40px 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: left;
+    display: list-item;
+}
+.logo a:hover {
+    background-color: #F0F3F4 ;
+    color: #333;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.heading {
+    background-color: #e6e6e6 ;
+    width: 1668px;
+}
+.heading h2 {
+    font-size: 35px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 20px 0 20px 20px;
+    text-align: left;
+    color: black;
+    position: relative;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+}
+.box {
+    text-align: center;
+}
+.table_1 {
+    margin-top: 3%;
+    margin-left: 8%;
+    width: 1300px;
+    height: auto;
+    background: transparent;
+    border-radius: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.table_2 {
+    margin-left: 8%;
+    width: 1300px;
+    height: auto;
+    background: transparent;
+    border-radius: 20px;
+    border-bottom: 2px solid black;
+}
+.Details {
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 4%;
+    padding: 10px 55px;
+    color: black;
+}
+.result {
+    font-size: 27px;
+    font-weight: 600; 
+    color: #424949;
+    margin-left: 4%;
+    width: 270px;
+}
+.result_1 {
+    font-size: 27px;
+    font-weight: 600;
+    width: 270px;
+    color: #424949;
+}
+.result_2 {
+    font-size: 27px;
+    font-weight: 600;
+    width: 270px;
+    margin-left: 2%;
+    color: #424949;
+}
+.result_3 {
+    font-size: 27px;
+    font-weight: 600; 
+    width: 270px;
+    margin-left: 5%;
+    color: #424949;
+}
+.table_1 {
+    display: flex;
+}
+.table_2 {
+    display: flex;
+}

@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    background: white;
+    height: 110px;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    border-bottom: 2px solid #ECF0F1;
+}
+.logo {
+    width: 20%;
+    float: left;
+    line-height: 100px;
+}
+
+nav {
+    float: right;
+    line-height: 100px;
+    position: relative;
+    
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+    color: black;
+    font-style: sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+nav .normal::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 4px;
+    width: 0;
+    background: linear-gradient(135deg,#a2a5a8 ,#515152);
+    transition: 0.5s;
+}
+nav .normal::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 4px;
+    width: 0;
+    background: linear-gradient(135deg,#85C1E9 ,#AF7AC5);
+    transition: 0.5s;
+}
+nav a:hover::before {
+    width: 100%;
+    
+}
+.active{
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#85C1E9 ,#AF7AC5);
+    color: white;
+    transition: 0.5s;
+}
+nav a.active:hover{
+    background: linear-gradient(135deg,#AF7AC5 ,#85C1E9);
+    color: white;
+    transition: all 0.2s ease;
+    
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slider {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./../images/sewing_machine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 700px;
+    height: 500px;
+    border-bottom: 2px solid white;
+}
+.slider h3 {
+    padding-top: 15%;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.slider a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: aqua;
+    border-radius: 30px;
+    padding: 5px 20px;
+    transition: 0.2s;
+}
+.slider a:hover {
+    color: violet;
+}
+.row_1{
+    width: 100%;
+    height: 400px;
+    background-color: #ECF0F1;
+}
+.coloum_1 {
+    text-align: left;
+    max-width: 1200px;
+    padding-top: 50px;
+    width: auto;
+    margin-left: 20%;
+}
+.row_1 p{
+    color: #333;
+    padding-top: 40px;
+    font-size: 18px;
+}
+.row_2 {
+    padding-top: 74px;
+    width: 100%;
+    background-color: white;
+}
+
+.coloum_2 {
+    text-align: left;
+    max-width: 1200px;
+    margin-left: 20%;
+    padding-top: 50px;
+    width: auto;
+}
+.coloum_2 p{
+    color: #333;
+    padding-top: 20px;
+    font-size: 18px;
+
+}
+.coloum_2_1 {
+    text-align: left;
+    max-width: 800px;
+    margin-left: 35%;
+    margin-top: 1%;
+}
+.coloum_2_1_1 {
+    padding-top: 40px;
+}
+
+.coloum_2_1_1 p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.coloum_2_1_1 .text {
+    margin-bottom: 20px;
+}
+.coloum_2_1_1 .text input{
+    width: 550px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #D0D3D4;
+    border-radius: 7px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.coloum_2_1_1 .message textarea {
+    width: 550px;
+    height: 60px;
+    outline: none;
+    border: 1px solid #D0D3D4;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-radius: 7px;
+    resize: none;
+}
+::placeholder{
+    font-size: 15px;
+    color: grey;
+}
+.button {
+    margin-top: 40px;
+    margin-left: 54%;
+    margin-bottom: 40px;
+}
+.button input {
+    width: 120px;
+    height: 35px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #2E86C1;
+    border-bottom: 1px solid #2E86C1;
+}
+.button input:hover{
+    background-color: #2874A6;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    border-top: 4px solid black;
+}
+ul {
+    list-style: none;
+    text-align: left;
+}
+.footer-coloum {
+    width: 20%;
+    padding: 0 10px;
+    text-align: left;
+}
+.footer-coloum h4 {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: left;
+    position: relative;
+}
+.footer-coloum ul li {
+    margin-bottom: 10px;
+}
+.footer-coloum ul li a {
+    font-size: 18px;
+    color: #bbbb;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.footer-coloum ul li a:hover {
+    color: white;
+    padding-left: 7px;
+}
+.footer-coloum .icons a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #bbbb;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.2s ease;
+}
+.footer-coloum .icons a:hover{
+    background-color: white;
+    color: black;
+}
+.copy{
+    color: #424949;
+    margin: 50px;
+}

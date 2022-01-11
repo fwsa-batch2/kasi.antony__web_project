@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #F7F9F9 ;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.logo {
+    width: 13%;
+    background-color: white;
+    border-right: 2px solid #F7F9F9 ;
+}
+.logo img{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right: 35px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-style: sans-serif;
+    padding: 40px 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: left;
+    display: list-item;
+}
+.logo a:hover {
+    background-color: #ECF0F1;
+    color: #333;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.heading {
+    background-color: #D0D3D4;
+    width: 1668px;
+}
+.heading h2 {
+    font-size: 35px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 20px 0 20px 20px;
+    text-align: left;
+    color: black;
+    position: relative;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+}
+.admissionInfo {
+    margin-top: 3%;
+    width: 1200px;
+    height: auto;
+    margin-left: 5%;
+    background: transparent;
+    border-radius: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.box p{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    color: black;
+    word-spacing: 7px;
+}
+.place {
+    font-weight: 600;
+    color: #7BD16A;
+}
+.button {
+    font-size: 20px;
+    color: black;
+    padding-top: 20px;
+    font-weight: 600;
+    padding-left: 29%;
+}
+.button a{
+    text-decoration: none;
+    font-size: 25px;
+    color: greenyellow;
+    font-weight: 600;
+}
+.button a:hover {
+    color: #7BD16A;
+}

@@ -70,7 +70,7 @@ function register() {
     const accountdetails = JSON.stringify(array);
     localStorage.setItem("USERDETAIL",accountdetails);
 
-    window.location.href="../../pages/log in.html";
+    window.location.href="login.html";
 
     console.table(userDetails);
     console.log(isExist);
@@ -78,6 +78,23 @@ function register() {
 
 }
 recoverDetails();
+
+function isUserExist(currentUser) {
+
+    let userExist = false;
+
+    const List = JSON.parse(localStorage.getItem("USERDETAIL"));
+    if (List != null) {
+        for (let i = 0; i<List.length; i++) {
+            const user=List[i].userName;
+            if (currentUser == user){
+                userExist = true;
+                break;
+            }
+        }
+    }
+    return userExist;
+}
 
 function isEmailALreadyExist(currentEmail) {
 
@@ -99,21 +116,4 @@ function isEmailALreadyExist(currentEmail) {
     console.groupEnd("IsExist");
     return isExist;
     
-}
-
-function isUserExist(currentUser) {
-
-    let userExist = false;
-
-    const List = JSON.parse(localStorage.getItem("USERDETAIL"));
-    if (List != null) {
-        for (let i = 0; i<List.length; i++) {
-            const user=List[i].userName;
-            if (currentUser == user){
-                userExist = true;
-                break;
-            }
-        }
-    }
-    return userExist;
 }

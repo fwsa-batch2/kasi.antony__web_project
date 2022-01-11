@@ -1,36 +1,125 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>
-  Modern tailors
-</title>
-<link rel="stylesheet" href="./../assets/CSS/contact.css">
-</head>
-  <body link="#000" alink="#17bf5" vlink="white">
-  </br>
-</br>
-    <img src="./../assets/images/Logo.png" width="100" height="100" align="left"><font size="20" style="color: white">MODERN TAILORS</font></br>
-    <ul>
-      <li style="float: left"><font size="5" style="color: red">THE MENS BOUTIQUE</font></li>
-       <font face="cinzel" size="4">
-        <li><a href="./../pages/contact.html">CONTACT US</a></li>
-        <li><a href="./../pages/sign up.html">REG FORM</a></li>
-        <li><a href="./../pages/About us.html">ABOUT US</a></li>
-        <li><a href="./../pages/Tailoring.html">HOME</a></li>
-        <br><br><br>
-      </font></ul>
-        <font size="8" face="verdana" style="color: white">
-          <span class="head">
-          CONTACT US
-          </span>
-        </font>
-    <br><br>
-    <font size="6" style="color: white">Have a question? Want to learn more about the exciting opportunities we offer? Feel free to drop us a line in the form below and we will be</br>in touch.</font></br></br>
-    <form>
-      <font size="5" style="color: white">Name*</font></br><input type="text" name="name"></br>
-      <font size="5" style="color: white">email*</font></br><input type="email" name="name"></br>
-      <font size="5" style="color: white">comments*</font></br><input type="text" name="message" class="comments"></textarea>
-      </form>
-<a href="./../pages/Tailoring.html" style="color: white">Previous page</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" style="color: white">Submit</a>
-    </body>
-    </html>
+    <head>
+        <title>
+            Modern tailors
+        </title>   
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="icon" href="./../assets/images/Logo-removebg-preview.png">
+            <link rel="stylesheet" href="./../assets/CSS/contact.css">
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+    </head>
+        <body>
+            <div class="main" id="main">
+            <header>
+
+                <div class="wrapper" >
+                    <div class="logo">
+                        <img src="./../assets/images/LogoMakr.png" width="83%" height="83%">
+                    </div>
+
+                     <nav>
+
+                        <a href="Tailoring.html" class="normal">HOME</a>
+                        <a href="#online" class="normal">ONLINE CLASSES</a>
+                        <a href="About us.html" class="normal">ABOUT US</a>
+                        <a href="login.html" class="normal-1">LOG IN</a>
+
+                     </nav>
+                </div>
+                </header>
+                <div class="heading">
+                    <h2>CONTACT US</h2>
+                </div>
+            
+            </div>
+            <div class="row_1" >
+                <hr>
+                <form onsubmit="querygetting()">
+                <div class="coloum_2_1">
+                    <h2>Contact us</h2>
+                    <p>Feel free to write to us in the form below for any general 
+                    queries regarding the website. We will get back to you as soon as possible.</p>
+                    <p>Or email us at <span>learn@moderntailors.com</span></p>
+                    <p>Ph: 020849539311</p>
+                    <div class="text">
+                    <input type="text" placeholder="Name" id="name" pattern="[a-zA-Z].{2,20}" required>
+                </div> 
+                <div class="text">
+                    <input type="text" placeholder="email@email.com" id="email" pattern="[a-zA-Z0-9]+@[a-z]+..{2,3}" required>
+                </div>
+                <div class="text">
+                    <input type="text" placeholder="Contact" id="contact" pattern="[0-9]{10}" required>
+                </div>
+                <div class="message">
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+            </div> 
+            <div class="button">
+                <input type="submit" value="submit">
+            </div>
+            </form>
+            <div class="popup" id="popup_1">
+              <div class="overlay" id="overlay_1"></div>
+              <div class="contact">
+                <div class="fas fa-times" onclick="cross()"></div>
+                <h1>Thank you</h1>
+                <p>Thank you,for contacting us,we will come back to you soon.</p>
+                <div class="line"></div>
+                <a href="Tailoring.html"><input type="button" value="continue"></a>
+              </div>
+            </div>
+            <hr>
+        </div> 
+            <div class="content">
+                
+              <footer class="foot">
+                <img src="./../assets/images/logo.jpg">
+                <div class="container">
+                <div class="row">
+                    <div class="footer-coloum">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="admission.html">Become an instructor</a></li>
+                            <li><a href="#">How to learn</a></li>
+                            <li><a href="#">Our service</a></li>
+                            <li><a href="About us.html">About us</a></li>
+                            <li><a href="contact.html">Contct us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-coloum">
+                        <h4>Our Site</h4>
+                        <ul>
+                            <li><a href="Tailoring.html">Home</a></li>
+                            <li><a href="#">Online classes</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-coloum">
+                        <h4>Introduction</h4>
+                        <ul>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-coloum">
+                        <h4>follow us on</h4>
+                        <div class="icons"> 
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a> 
+                        </div>    
+                    </div>
+                </div>
+                </div>
+                <div class="copy"> 
+                Copyrights by Modern tailors&copy;done by Kasi antony
+            </div>
+              </footer>
+            </div>
+            <script src="./../assets/js/contact.js"></script>
+        </body>
+</html>
