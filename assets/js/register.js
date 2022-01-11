@@ -70,7 +70,7 @@ function register() {
     const accountdetails = JSON.stringify(array);
     localStorage.setItem("USERDETAIL",accountdetails);
 
-    window.location.href="login.html";
+    window.location.href="./../../pages/login.html";
 
     console.table(userDetails);
     console.log(isExist);
