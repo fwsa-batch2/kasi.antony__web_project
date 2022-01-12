@@ -54,7 +54,7 @@ function usercheck(event) {
         console.error(userexist);
     }
 
-    if (userexist == false){
+    if (userexist){
         alert("Username or Password Invalid")
         return null;
     }
