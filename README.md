@@ -8,19 +8,12 @@
 
 
 ## Features
-<<<<<<< HEAD
+
  1.Register
  2.Login
  3.Admission for instructor
  4.List of admission
  5.contact us
-=======
-### 1.Register
-### 2.Login
-### 3.Admission for instructor
-### 4.List of admission
-### 5.contact us
->>>>>>> 59b89c6269e3a07894f4c5299bd669883d6ddff8
 
 
 ### Register
@@ -54,10 +47,5 @@
 
 ### List of admission
 
-<<<<<<< HEAD
  * shows the detail of who applied in admission.
  * it shows Name,mail-id,contact and age.
-=======
-# * shows the detail of who applied in admission.
-# * it shows Name,mail-id,contact and age.
->>>>>>> 59b89c6269e3a07894f4c5299bd669883d6ddff8
