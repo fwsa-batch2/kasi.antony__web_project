@@ -50,7 +50,7 @@ nav .normal::before{
     bottom: -15px;
     height: 4px;
     width: 0;
-    background: linear-gradient(135deg,#a2a5a8 ,#515152);
+    background: linear-gradient(to right,#85C1E9 ,#AF7AC5);
     transition: 0.5s;
 }
 nav a:hover::before {
@@ -60,12 +60,12 @@ nav a:hover::before {
 .active{
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
-    background: linear-gradient(135deg,#85C1E9 ,#AF7AC5);
+    background: linear-gradient(to right,#85C1E9 ,#AF7AC5);
     color: white;
     transition: 0.5s;
 }
 nav a.active:hover{
-    background: linear-gradient(135deg,#AF7AC5 ,#85C1E9);
+    background: linear-gradient(to right,#AF7AC5 ,#85C1E9);
     color: white;
     transition: all 0.2s ease;
     

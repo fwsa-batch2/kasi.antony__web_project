@@ -22,21 +22,13 @@ function register(event) {
 
     const name = document.getElementById("name").value;
     const number = document.getElementById("phone").value;
-    const country = document.getElementById("country").value;
-    const state = document.getElementById("state").value;
-    const town = document.getElementById("town").value;
     const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
-    const zipcode=document.getElementById("zipcode").value;
     let password1 = document.getElementById("password").value;
     let password2 = document.getElementById("confirmpassword").value;
     let userDetails = {
         "Name":name,
         "Contact":number,
-        "Country":country,
-        "State":state,
-        "Town":town,
-        "ZipcODE":zipcode,
         "userName": username,
         "Email": email,
         "password": password1,
