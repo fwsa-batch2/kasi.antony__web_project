@@ -44,21 +44,23 @@ function usercheck(event) {
         if(usena1 == user && paswd1 == password){
             userexist = true;
             localStorage.setItem("USERCHECK",usena1);
-            alert("logged in successfully")
             
-            window.location.href="Tailoring.html"
+            togglepopup()
+            
             console.log(usena1);
             console.log(userexist);
             break;
         }
         console.error(userexist);
+
+        if (userexist){
+            alert("Username or Password Invalid")
+            return null;
+        }
+       
+
     }
 
-    if (userexist){
-        alert("Username or Password Invalid")
-        return null;
-    }
-   
     console.groupEnd("usercheck");
 
 }
@@ -71,4 +73,8 @@ function showpassword() {
     else{
         document.getElementById("password").type = "password"
     }
+}
+
+function togglepopup() {
+    document.getElementById("popup_1").classList.toggle("active");
 }
