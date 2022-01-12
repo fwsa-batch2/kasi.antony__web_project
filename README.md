@@ -1,13 +1,13 @@
-## MODERN TAILORS
+### MODERN TAILORS
 
-## Sonar cloud link
+### Sonar cloud link
 #### https://sonarcloud.io/project/overview?id=fwsa-batch-02_moderntailorsapp-ui
 
-## Gitub link
+### Gitub link
 #### https://github.com/fwsa-batch-02/moderntailorsapp-ui
 
 
-## Features
+### Features
 
  1.Register
  2.Login
