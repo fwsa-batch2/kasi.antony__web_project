@@ -77,8 +77,8 @@ function isUserExist(currentUser) {
     let userExist = false;
 
     const List = JSON.parse(localStorage.getItem("USERDETAIL"));
-    let len = List.length;
     if (List != null) {
+        let len = List.length;
         for (let i = 0; i < len; i++) {
             const user=List[i].userName;
             if (currentUser == user){
@@ -97,7 +97,8 @@ function isEmailALreadyExist(currentEmail) {
     let isExist = false;
     const userList = JSON.parse(localStorage.getItem("USERDETAIL"));
     if (userList != null) {
-        for (let i = 0; i < userList.length; i++) {
+        let len = userList.length;
+        for (let i = 0; i < len; i++) {
             const user = userList[i];
             const email = user.Email;
             if (currentEmail == email) {
