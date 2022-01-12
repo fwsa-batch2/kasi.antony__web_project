@@ -96,9 +96,8 @@ function isEmailALreadyExist(currentEmail) {
 
     let isExist = false;
     const userList = JSON.parse(localStorage.getItem("USERDETAIL"));
-    let wid = userList.length;
     if (userList != null) {
-        for (let i = 0; i < wid; i++) {
+        for (let i = 0; i < userList.length; i++) {
             const user = userList[i];
             const email = user.Email;
             if (currentEmail == email) {
