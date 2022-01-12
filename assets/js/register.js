@@ -1,6 +1,6 @@
 let array = []
 function recoverDetails() {
-    console.group("recoverdetails");
+
     let details=localStorage.getItem("USERDETAIL");
     let detailstoArray=JSON.parse(details)
 
@@ -12,7 +12,6 @@ function recoverDetails() {
         array=detailstoArray
     }
     console.table(details);
-    console.groupEnd("recoverdetails");
 }
 
 
@@ -21,7 +20,6 @@ function recoverDetails() {
 function register(event) {
     event.preventDefault();
 
-    console.group("Register");
     const name = document.getElementById("name").value;
     const number = document.getElementById("phone").value;
     const country = document.getElementById("country").value;
@@ -71,10 +69,6 @@ function register(event) {
 
     window.location.href="./../../pages/login.html";
 
-    console.table(userDetails);
-    console.log(isExist);
-    console.groupEnd("Register");
-
 }
 recoverDetails();
 
@@ -83,7 +77,7 @@ function isUserExist(currentUser) {
     let userExist = false;
 
     const List = JSON.parse(localStorage.getItem("USERDETAIL"));
-    let len = List.length
+    let len = List.length;
     if (List != null) {
         for (let i = 0; i < len; i++) {
             const user=List[i].userName;
