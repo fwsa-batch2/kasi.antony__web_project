@@ -9,11 +9,11 @@
 
 ### Features
 
- 1.Register
- 2.Login
- 3.Admission for instructor
- 4.List of admission
- 5.contact us
+#### 1.Register
+#### 2.Login
+#### 3.Admission for instructor
+#### 4.List of admission
+#### 5.contact us
 
 
 ### Register
