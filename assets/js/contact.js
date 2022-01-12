@@ -18,7 +18,7 @@ function recoverDetails() {
 
 
 
-function querygetting() {
+function querygetting(event) {
     event.preventDefault();
     const name = document.getElementById("name").value;
     const number = document.getElementById("contact").value;

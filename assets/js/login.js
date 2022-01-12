@@ -1,16 +1,17 @@
-function usercheck() {
+function usercheck(event) {
     event.preventDefault();
     console.group("usercheck");
 
     const usena1 = document.getElementById("name").value;
     const paswd1 = document.getElementById("password").value;
     let userdetail = JSON.parse(localStorage.getItem("USERDETAIL"));
+    let len = userdetail.length;
     let error = document.getElementById("error");
     let text;
 
     
 
-    if (paswd1.length < 20){
+    if (paswd1.length < 5){
         error.style.display = "block";
         text ="Username or Password invalid!";
         error.innerHTML = text;  
@@ -33,7 +34,7 @@ function usercheck() {
 
     let userexist = false;
 
-    for(let i=0 ; i<userdetail.length ; i++) {
+    for(let i=0 ; i < len ; i++) {
 
         
         
@@ -53,10 +54,10 @@ function usercheck() {
         console.error(userexist);
     }
 
-    // if (userexist == false){
-    //     alert("Username or Password Invalid")
-    //     return null;
-    // }
+    if (userexist == false){
+        alert("Username or Password Invalid")
+        return null;
+    }
    
     console.groupEnd("usercheck");
 

@@ -18,7 +18,7 @@ function recoverDetails() {
 
 
 
-function admin() {
+function admin(event) {
     event.preventDefault();
     console.group("Register");
     const name = document.getElementById("name").value;
@@ -43,7 +43,7 @@ function admin() {
 
     const isExist = isEmailALreadyExist(email);
 
-    if (isExist == true) {
+    if (isExist) {
         alert("Email Id Already Registered");
         return;
     }
@@ -69,7 +69,7 @@ function isEmailALreadyExist(currentEmail) {
     let isExist = false;
     const userList = JSON.parse(localStorage.getItem("TEACHERDETAIL"));
     if (userList != null) {
-        for (i = 0; i < userList.length; i++) {
+        for (let i = 0; i < userList.length; i++) {
             const user = userList[i];
             const email = user.Email;
             if (currentEmail == email) {

@@ -18,8 +18,7 @@ function recoverDetails() {
 
 
 
-function register() {
-
+function register(event) {
     event.preventDefault();
 
     console.group("Register");
@@ -84,8 +83,9 @@ function isUserExist(currentUser) {
     let userExist = false;
 
     const List = JSON.parse(localStorage.getItem("USERDETAIL"));
+    let len = List.length
     if (List != null) {
-        for (let i = 0; i<List.length; i++) {
+        for (let i = 0; i < len; i++) {
             const user=List[i].userName;
             if (currentUser == user){
                 userExist = true;
@@ -102,8 +102,9 @@ function isEmailALreadyExist(currentEmail) {
 
     let isExist = false;
     const userList = JSON.parse(localStorage.getItem("USERDETAIL"));
+    let len = userList.length
     if (userList != null) {
-        for (i = 0; i < userList.length; i++) {
+        for (let i = 0; i < len; i++) {
             const user = userList[i];
             const email = user.Email;
             if (currentEmail == email) {

@@ -22,6 +22,7 @@
  * User name must contain 3 characters and must not be empty.
  * Email id must contain 2 characters before the suffix @gmail.com.
  * Email id entered must not exist in local storage already.
+ * User name entered must not exist in local storage already.
  * Password and Confirm password fields must contain minimum 8 and maximum 12 characters.
  * Password and Confirm password fields must contain same value.
  * If everything is validated, redirect to login page.
