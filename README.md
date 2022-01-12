@@ -6,6 +6,8 @@
 ### Gitub link
 #### https://github.com/fwsa-batch-02/moderntailorsapp-ui
 
+### Netlify link
+#### https://moderntailorsapp-ui-kasiantony.netlify.app/
 
 ### Features
 
