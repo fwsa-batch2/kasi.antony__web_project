@@ -52,16 +52,6 @@ nav .normal::before{
   background: linear-gradient(135deg,#a2a5a8 ,#515152);
   transition: 0.5s;
 }
-nav .normal::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  height: 4px;
-  width: 0;
-  background: linear-gradient(135deg,#85C1E9 ,#AF7AC5);
-  transition: 0.5s;
-}
 nav a:hover::before {
   width: 100%;
   
@@ -112,8 +102,6 @@ hr {
   text-align: left;
   max-width: 600px;
   margin-left: 30%;
-}
-.coloum_2_1 {
   padding-top: 40px;
 }
 span{

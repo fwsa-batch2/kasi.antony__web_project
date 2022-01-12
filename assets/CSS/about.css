@@ -53,16 +53,6 @@ nav .normal::before{
   background: linear-gradient(135deg,#a2a5a8 ,#515152);
   transition: 0.5s;
 }
-nav .normal::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  height: 4px;
-  width: 0;
-  background: linear-gradient(135deg,#85C1E9 ,#AF7AC5);
-  transition: 0.5s;
-}
 nav a:hover::before {
   width: 100%;
   
@@ -105,6 +95,7 @@ nav a.active:hover{
 }
 .row_1 .coloum_2{
   margin-top: 80px;
+  display: flex;
 }
 .row_1 .coloum_1 p {
   font-size: 25px;
@@ -134,9 +125,6 @@ nav a.active:hover{
   font-size: 20px;
   color: #333;
   font-family: cursive;
-}
-.row_1 .coloum_2 {
-  display: flex;
 }
 .row_1 .coloum_2 .coloum_1_2 img {
   margin-top: 50px;
