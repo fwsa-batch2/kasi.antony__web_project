@@ -51,9 +51,7 @@ function usercheck(event) {
             console.log(userexist);
             break;
         }
-        console.error(userexist);
-
-        if (userexist != true){
+        else {
             alert("Username or Password Invalid")
             return null;
         }
@@ -66,12 +64,12 @@ function usercheck(event) {
 }
 
 function showpassword() {
-    let checkbox = document.getElementById("checkbox");
-    if (checkbox.checked) {
-        document.getElementById("password").type = "text";
+    let checkbox = document.getElementById("password");
+    if (checkbox.type === "password") {
+        checkbox.type = "text";
     }
     else{
-        document.getElementById("password").type = "password"
+        checkbox.type = "password"
     }
 }
 
