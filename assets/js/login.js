@@ -34,10 +34,10 @@ function usercheck(event) {
 
     let userexist = false;
 
-    for(let i=0; i < len; i++) {
+    for(let i of userdetail) {
 
-        let user = userdetail[i].userName;
-        let password = userdetail[i].password
+        let user = i.useName;
+        let password = i.password;
 
         if( user == usena1 && password == paswd1 ){
             userexist = true;
