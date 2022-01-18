@@ -5,7 +5,6 @@ function usercheck(event) {
     const usena1 = document.getElementById("name").value;
     const paswd1 = document.getElementById("password").value;
     let userdetail = JSON.parse(localStorage.getItem("USERDETAIL"));
-    let len = userdetail.length;
     let error = document.getElementById("error");
     let text;
 
