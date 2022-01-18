@@ -60,7 +60,7 @@ header {
   max-width: 800px;
   padding: 25px 30px;
   margin-left: 28%;
-  background: transparent;
+  background: white;
   border: 1px solid #F4F6F7 ;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgb(12,12,12);
@@ -96,6 +96,7 @@ header {
 .user-details .col-1-1 .details{
   font-weight: 600;
   margin-bottom: 20px;
+  color: black;
 }
 .user-details .col-1-1 .details input .name-1{
   width: 1000px;
@@ -103,6 +104,7 @@ header {
 .user-details .col-1-1 em {
   margin-left: 15px;
   margin-bottom: 20px;
+  color: black;
 }
 form .button-row {
   display: flex;

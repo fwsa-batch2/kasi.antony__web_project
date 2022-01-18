@@ -1,17 +1,13 @@
-let array = []
+let array = [];
 function recoverDetails() {
 
     let details=localStorage.getItem("USERDETAIL");
-    let detailstoArray=JSON.parse(details)
+    let detailstoArray=JSON.parse(details);
 
 
-    if ( detailstoArray==null ) {
-        array=[]
-    }
-    else {
-        array=detailstoArray
-    }
-    console.table(details);
+    if ( detailstoArray != null ) {
+        array=detailstoArray;
+}
 }
 
 
@@ -62,7 +58,7 @@ function register(event) {
     window.location.href="./../../pages/login.html";
 
 }
-recoverDetails();
+
 
 function isUserExist(currentUser) {
 
@@ -104,3 +100,5 @@ function isEmailALreadyExist(currentEmail) {
     return isExist;
     
 }
+
+recoverDetails();

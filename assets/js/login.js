@@ -34,14 +34,12 @@ function usercheck(event) {
 
     let userexist = false;
 
-    for(let i=0 ; i < len ; i++) {
+    for(let i=0; i < len; i++) {
 
-        
-        
-        let user=userdetail[i].userName;
-        let password=userdetail[i].password;
+        let user = userdetail[i].userName;
+        let password = userdetail[i].password
 
-        if(usena1 == user && paswd1 == password){
+        if( user == usena1 && password == paswd1 ){
             userexist = true;
             localStorage.setItem("USERCHECK",usena1);
             
