@@ -148,3 +148,15 @@ form .button input {
   background: greenyellow;
 
 }
+.check {
+  margin-right: 75%;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+.check input{
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+}

@@ -13,21 +13,24 @@
     </head>
         <body>
             <div class="main">
-            <header>
-
-                <div class="wrapper" >
-                    <div class="logo">
-                        <img src="./../assets/images/LogoMakr.png" alt="logo" width="83%" height="83%">
-                    </div>
-                </div>
-                </header>
-                <div class="heading">
-                    <h2>SIGN IN</h2>
-                </div>
-                <div class="login">
-                    <a href="./signup.html">New Student</a> | <a href="">Forget Password</a>
-                </div>
+                
                 <div class="reg">
+                    <header>
+
+                        <div class="wrapper" >
+                            <div class="logo">
+                                <img src="./../assets/images/LogoMakr.png" alt="logo" width="83%" height="83%">
+                            </div>
+                        </div>
+                        </header>
+                    <div class="heading">
+                        <h2>SIGN IN</h2>
+                        
+                    </div>
+                    <hr>
+                    <div class="login">
+                        <a href="./signup.html">New Student</a> | <a href="">Forget Password</a>
+                    </div>
                     <form onsubmit="usercheck(event)">
                         <div class="user-details">
                             <div class="col-1-1">
@@ -35,17 +38,19 @@
                                 <span class="details">User name</span>
                                 <input type="text" placeholder="User name"  id="name" pattern="[a-zA-Z].{2,20}" autofocus required>
                             </div>
+                            
                             <div class="col-1-1">
                                 <em class="fa fa-lock icon"></em>
                                 <span class="details">Password</span>
                                 <input type="password" placeholder="password" id="password" pattern="[a-zA-Z0-9@.\-_].{8,12}" required>
                             </div>
+                            <div id="error"></div>
                             
                         <div class="check">
                             <input type="checkbox" id="checkbox" onchange="showpassword()">
                             <label>showpassword</label>
                         </div>
-                        <div id="error"></div>
+                        
                         </div>
                         <div class="button">
                             <input type="submit" value="submit">

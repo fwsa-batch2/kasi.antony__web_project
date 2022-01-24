@@ -1,13 +1,13 @@
 let array = [];
 function recoverDetails() {
 
-    let details=localStorage.getItem("USERDETAIL");
-    let detailstoArray=JSON.parse(details);
+    let details=JSON.parse(localStorage.getItem("USERDETAIL"));
 
 
-    if ( detailstoArray != null ) {
-        array=detailstoArray;
+    if ( details != null ) {
+        array=details;
 }
+
 }
 
 
@@ -22,19 +22,15 @@ function register(event) {
     const email = document.getElementById("email").value;
     let password1 = document.getElementById("password").value;
     let password2 = document.getElementById("confirmpassword").value;
-    let userDetails = {
+    const userDetails = {
         "Name":name,
         "Contact":number,
         "userName": username,
         "Email": email,
         "password": password1,
         "confirmpassword": password2,
-    }
+    };
 
-    if (password1 != password2) {
-        alert("Password and Confirm Password does not match");
-        return;
-    }
 
     const isExist = isEmailALreadyExist(email);
 
@@ -50,10 +46,12 @@ function register(event) {
         return;
     }
 
-
+    if (password1 != password2) {
+        alert("Password and Confirm Password does not match");
+        return;
+    }
     array.push(userDetails);
-    const accountdetails = JSON.stringify(array);
-    localStorage.setItem("USERDETAIL",accountdetails);
+    localStorage.setItem("USERDETAIL",JSON.stringify(array));
 
     window.location.href="./../../pages/login.html";
 
@@ -101,4 +99,19 @@ function isEmailALreadyExist(currentEmail) {
     
 }
 
+function showpassword() {
+    let checkbox = document.getElementById("password");
+    let checkbox1 = document.getElementById("confirmpassword")
+    if (checkbox.type === "password" && checkbox1.type === "password") 
+    {
+        checkbox.type = "text";
+        checkbox1.type = "text";
+    }
+    else{
+        checkbox.type = "password";
+        checkbox1.type = "password";
+    }
+}
+
 recoverDetails();
+

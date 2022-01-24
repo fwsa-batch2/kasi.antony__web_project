@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    text-align: center;
+}
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+  
+header {
+    background: white;
+    height: 110px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 2px solid #ECF0F1;
+}
+.logo {
+    width: 20%;
+    float: left;
+    line-height: 100px;
+}
+  
+nav {
+    float: right;
+    line-height: 100px;
+    position: relative;
+    
+}
+  
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+    color: black;
+    font-style: sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+nav .normal::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 4px;
+    width: 0;
+    background: linear-gradient(to right,#85C1E9 ,#AF7AC5);
+    transition: 0.5s;
+}
+nav a:hover::before {
+    width: 100%;
+    
+}
+.normal-1{
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    background: linear-gradient(to right,#85C1E9 ,#AF7AC5);
+    color: white;
+    transition: 0.5s;
+}
+nav a.normal-1:hover{
+    background: linear-gradient(to right ,#AF7AC5 ,#85C1E9);
+    color: white;
+    transition: all 0.2s ease;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer {
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    border-top: 4px solid black;
+}
+ul {
+    list-style: none;
+    text-align: left;
+}
+.footer-coloum {
+    width: 20%;
+    padding: 0 10px;
+    text-align: left;
+}
+.footer-coloum h4 {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: left;
+    position: relative;
+}
+.footer-coloum ul li {
+    margin-bottom: 10px;
+}
+.footer-coloum ul li a {
+    font-size: 18px;
+    color: #bbbb;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.footer-coloum ul li a:hover {
+    color: white;
+    padding-left: 7px;
+}
+.footer-coloum .icons a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #bbbb;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.2s ease;
+}
+.footer-coloum .icons a:hover{
+    background-color: white;
+    color: black;
+}
+.copy{
+    color: #424949;
+    margin: 50px;
+} 
