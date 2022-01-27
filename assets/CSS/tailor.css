@@ -266,8 +266,8 @@ a.button_2:hover{
     margin-bottom: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-top: none;
     border: 1px solid #CACFD2;
 
@@ -284,14 +284,15 @@ a.button_2:hover{
 }
 .row-1 .col-1-1 .col-1-2 button:hover{
     color: #7B7D7D;
+    cursor: pointer;
 }
 .row-1 .col-1-1 .col-1-3 h3{
     margin-top: 3px;
     margin-bottom: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-bottom: none;
     border: 1px solid #CACFD2;
 
@@ -308,14 +309,15 @@ a.button_2:hover{
 }
 .row-1 .col-1-1 .col-1-3 button:hover{
     color: #7B7D7D;
+    cursor: pointer;
 }
 .row-1 .col-1-1 .col-1-4 h3{
     margin-top: 3px;
     margin-bottom: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 40px;
+    padding-left: 40px;
     border-bottom: none;
     border: 1px solid #CACFD2;
 
@@ -332,6 +334,7 @@ a.button_2:hover{
 }
 .row-1 .col-1-1 .col-1-4 button:hover{
     color: #7B7D7D;
+    cursor: pointer;
 }
 .row-1 .col-1-1 .col-1-2{
     margin-top: 20px;
@@ -347,7 +350,7 @@ a.button_2:hover{
 }
 .row-1 .col-1-1 .col-1-2 .image{
     height: auto;
-    width: 100%;
+    width: 302px;
     overflow: hidden;
 }
 .row-1 .col-1-1 .col-1-2 .image img{
@@ -357,6 +360,7 @@ a.button_2:hover{
 }
 .row-1 .col-1-1 .col-1-2 .image:hover img{
     transform: scale(1.2);
+    cursor: pointer;
 }
 .row-1 .col-1-1 .col-1-3 .image{
     height: auto;
@@ -370,6 +374,7 @@ a.button_2:hover{
 }
 .row-1 .col-1-1 .col-1-3 .image:hover img{
     transform: scale(1.2);
+    cursor: pointer;
 }
 .row-1 .col-1-1 .col-1-4 .image{
     height: auto;
@@ -383,6 +388,7 @@ a.button_2:hover{
 }
 .row-1 .col-1-1 .col-1-4 .image:hover img{
     transform: scale(1.2);
+    cursor: pointer;
 } 
 .row-1 .col-1-1 .col-1-5{
     margin-top: 20px;
@@ -393,8 +399,8 @@ a.button_2:hover{
     margin-bottom: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 40px;
+    padding-left: 40px;
     border-bottom: none;
     border: 1px solid #CACFD2;
 
@@ -411,6 +417,7 @@ a.button_2:hover{
 }
 .row-1 .col-1-1 .col-1-5 button:hover{
     color: #7B7D7D;
+    cursor: pointer;
 }
 .row-1 .col-1-1 .col-1-5 .image{
     height: auto;
@@ -424,10 +431,12 @@ a.button_2:hover{
 }
 .row-1 .col-1-1 .col-1-5 .image:hover img{
     transform: scale(1.2);
+    cursor: pointer;
 } 
 .row-2{
     width: 100%;
     height: auto;
+    padding-bottom: 30px;
     background-color: #f4f4f4;
 }
 .heading{
@@ -445,23 +454,25 @@ a.button_2:hover{
     margin-bottom: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 70px;
+    padding-left: 70px;
     border-bottom: none;
-    border: 1px solid #ECF0F1;
+    border: 1px solid #979A9A ;
 
 }
 .row-2 .col-2-1 .col-2-2 button{
     background: transparent;
-    border: 1px solid #ECF0F1;
+    border: 1px solid #979A9A ;
+    border-top: none;
     padding-top: 10px;
     font-weight: 600;
     padding-bottom: 10px;
-    padding-right: 130px;
-    padding-left: 130px;
+    padding-right: 183px;
+    padding-left: 183px;
 }
 .row-2 .col-2-1 .col-2-2 button:hover{
     color: #7B7D7D;
+    cursor: pointer;
 }
 .row-2 .col-2-1 .col-2-3 h3{
     margin-top: 3px;
@@ -471,19 +482,22 @@ a.button_2:hover{
     padding-right: 80px;
     padding-left: 80px;
     border-bottom: none;
-    border: 1px solid #ECF0F1;
+    border: 1px solid #979A9A ;
 
 }
 .row-2 .col-2-1 .col-2-3 button{
     background: transparent;
-    border: 1px solid #ECF0F1;
+    border: 1px solid #979A9A ;
+    border-top: none;
     padding-top: 10px;
+    font-weight: 600;
     padding-bottom: 10px;
-    padding-right: 130px;
-    padding-left: 130px;
+    padding-right: 183px;
+    padding-left: 183px;
 }
 .row-2 .col-2-1 .col-2-3 button:hover{
     color: #7B7D7D;
+    cursor: pointer;
 }
 .row-2 .col-2-1 .col-2-4 h3{
     margin-top: 3px;
@@ -493,19 +507,22 @@ a.button_2:hover{
     padding-right: 80px;
     padding-left: 80px;
     border-bottom: none;
-    border: 1px solid #ECF0F1;
+    border: 1px solid #979A9A ;
 
 }
 .row-2 .col-2-1 .col-2-4 button{
     background: transparent;
-    border: 1px solid #ECF0F1;
+    border: 1px solid #979A9A ;
+    border-top: none;
     padding-top: 10px;
+    font-weight: 600;
     padding-bottom: 10px;
-    padding-right: 130px;
-    padding-left: 130px;
+    padding-right: 183px;
+    padding-left: 183px;
 }
 .row-2 .col-2-1 .col-2-4 button:hover{
     color: #7B7D7D;
+    cursor: pointer;
 }
 .row-2 .col-2-1 .col-2-2{
     margin-top: 20px;
@@ -531,6 +548,7 @@ a.button_2:hover{
 }
 .row-2 .col-2-1 .col-2-2 .image:hover img{
     transform: scale(1.2);
+    cursor: pointer;
 }
 .row-2 .col-2-1 .col-2-3 .image{
     height: auto;
@@ -544,6 +562,7 @@ a.button_2:hover{
 }
 .row-2 .col-2-1 .col-2-3 .image:hover img{
     transform: scale(1.2);
+    cursor: pointer;
 }
 .row-2 .col-2-1 .col-2-4 .image{
     height: auto;
@@ -557,6 +576,7 @@ a.button_2:hover{
 }
 .row-2 .col-2-1 .col-2-4 .image:hover img{
     transform: scale(1.2);
+    cursor: pointer;
 }
 footer {
     background-color: black;
