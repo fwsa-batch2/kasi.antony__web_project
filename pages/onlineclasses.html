@@ -7,7 +7,7 @@
             <meta charset="UTF-8" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <link rel="icon" href="Logo-removebg-preview.png">
+            <link rel="icon" href="./../assets/images/Logo-removebg-preview.png">
             <link rel="stylesheet" href="./../assets/CSS/onlineclasses.css">
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
     </head>
@@ -36,59 +36,275 @@
             </div> 
             <div class="row_1">
                 <div class="coloumn1">
-                    
+                        <button onclick="get1('all')"id="tutorial">ALL FREE TUTORIAL</button>
+                        <div><button onclick="get2('machine')" id="machine">SEWING MACHINE TUTORIAL</button></div>
+                        <div><button onclick="get3('begin')" id="beginers">BEGINERS COURSES</button></div>
+                        <div><button onclick="get4('men')" id="gents">GENTS</button></div>
+                        <div><button onclick="get5('ladies')" id="women">WOMEN</button></div>
                     </div>
-                <div class="coloumn2">
-                        
+                <div class="coloumn2" id="filter" style="display: grid;" style="display: block;">
+                    <div class="col-1-5" style="display: block;" id="mactuto">
+                        <div class="image">
+                        <img src="./../assets/images/JUK.jpg" alt="sew" width="270px" height="170px">
+                    </div>
+                        <h3>HOW TO USE JUK MACHINE</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="mactuto1">
+                        <div class="image">
+                        <img src="./../assets/images/WAKEYEN.jpg" alt="sew" width="270px" height="170px">
+                    </div>
+                        <h3>HOW TO USE WAKEYEN MACHINE</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="mactuto2">
+                        <div class="image">
+                        <img src="./../assets/images/industrial.jpg" alt="sew" width="270px" height="170px">
+                    </div>
+                        <h3>HOW TO USE INDUSTRIAL MACHINE</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="mactuto3">
+                        <div class="image">
+                        <img src="./../assets/images/compensating.jpg" alt="sew" width="270px" height="170px">
+                    </div>
+                        <h3>HOW TO USE COMPENSATING</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="mactuto4">
+                        <div class="image">
+                        <img src="./../assets/images/machine1.jpg" alt="sew" width="270px" height="170px">
+                    </div>
+                        <h3>HOW TO USE NORMAL MACHINE</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="mactuto5">
+                        <div class="image">
+                        <img src="./../assets/images/buttons.jpg" alt="sew" width="270px" height="170px">
+                    </div>
+                        <h3>HOW TO USE BUTTONS FABRIC</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="mactuto6">
+                        <div class="image">
+                        <img src="./../assets/images/jukimo.jpg" alt="sew" width="270px" height="170px">
+                    </div>
+                        <h3>HOW TO USE JUKIMO MACHINE</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="mactuto7">
+                        <div class="image">
+                        <img src="./../assets/images/jack5.jpg" alt="sew" width="270px" height="170px">
+                    </div>
+                        <h3>HOW TO USE JACK5 MACHINE</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="bodymeasure">
+                        <div class="image">
+                        <img src="./../assets/images/takebodymeasurement.jpg" alt="sew" width="270px" height="170px">
+                    </div>
+                        <h3>HOW TO TAKE BODY MEASUREMENT</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="neckline">
+                        <div class="image">
+                        <img src="./../assets/images/necklinetheory.jpg" alt="sew" width="270px" height="200px">
+                    </div>
+                        <h3>HOW TO MEASURE NECKLINE</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="fabric">
+                        <div class="image">
+                        <img src="./../assets/images/layingandcuttingthefabric.jpg" alt="sew" width="270px" height="200px">
+                    </div>
+                        <h3>SEW BAG TUTORIAL</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="sleeve">
+                        <div class="image">
+                        <img src="./../assets/images/sleeveattachment.jpg" alt="sew" width="270px" height="200px">
+                    </div>
+                        <h3>HOW TO MEASURE SLEEVE</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="takemeasure">
+                        <div class="image">
+                        <img src="./../assets/images/takenecklines.jpg" alt="sew" width="270px" height="200px">
+                    </div>
+                        <h3>HOW TO MEASURE NECKLINE PART-II</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="chestmeasure">
+                        <div class="image">
+                        <img src="./../assets/images/Chest.jpg" alt="sew" width="270px" height="200px">
+                    </div>
+                        <h3>HOW TO MEASURE CHEST</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="dhoti">
+                        <div class="image">
+                        <img src="./../assets/images/dhoti.jpg" alt="sew" width="270px" height="200px">
+                    </div>
+                        <h3>SEW DHOTI</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="pants1">
+                        <div class="image">
+                        <img src="./../assets/images/pants1.jpg" alt="sew" width="270px" height="200px">
+                    </div>
+                        <h3>SEW PANT PART-I</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="pants2">
+                        <div class="image">
+                        <img src="./../assets/images/pants2.jpg" alt="sew" width="270px" height="200px">
+                    </div>
+                        <h3>SEW PANT PART-II</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: block;" id="pants3">
+                        <div class="image">
+                        <img src="./../assets/images/pants3.jpg" alt="sew" width="270px" height="200px">
+                    </div>
+                        <h3>SEW PANT PART-III</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="kurti1">
+                        <div class="image">
+                        <img src="./../assets/images/kurti1.jpg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW KURTI PART-I</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="kurti2">
+                        <div class="image">
+                        <img src="./../assets/images/kurti2.jpg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW KURTI PART-II</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="kurti3">
+                        <div class="image">
+                        <img src="./../assets/images/kurti3.jpg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW KURTI PART-III</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="shirt">
+                        <div class="image">
+                        <img src="./../assets/images/shirt.jpg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW MEN SHIRT PART-I</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="shirt1">
+                        <div class="image">
+                        <img src="./../assets/images/shirt1.jpg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW MEN SHIRT PART-II</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="mask">
+                        <div class="image">
+                        <img src="./../assets/images/mask.jpg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW MASK</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="menpants">
+                        <div class="image">
+                        <img src="./../assets/images/menpants.jpg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW MEN PANTS PART-I</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5"  style="display: none;" id="menpants1">
+                        <div class="image">
+                        <img src="./../assets/images/menpants1.jpg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW MEN PANTS PART-II</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="menpants2">
+                        <div class="image">
+                        <img src="./../assets/images/menpants2.jpeg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW MEN PANTS PART-III</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="coat">
+                        <div class="image" >
+                        <img src="./../assets/images/COAT.jpg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW COAT PART-I</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="coat1">
+                        <div class="image">
+                        <img src="./../assets/images/coat.webp" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW COAT PART-II</h3>
+                        <button>FREE</button>
+                    </div>
+                    <div class="col-1-5" style="display: none;" id="bag">
+                        <div class="image">
+                        <img src="./../assets/images/bag.jpg" alt="sew" width="170px" height="200px">
+                    </div>
+                        <h3>SEW BAG TUTORIAL</h3>
+                        <button>FREE</button>
                     </div>
                 </div>
-            </div> 
+                <div class="col-1-5" id="loadmore">
+                    <button onclick="load('addmore')">LOAD MORE</button>
+                </div>
+            </div>
             <div class="content">
-                
-              <footer class="foot">
-                <img src="./../assets/images/logo.jpg" alt="logo">
-                <div class="container">
-                <div class="row">
-                    <div class="footer-coloum">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="admission.html">Become an instructor</a></li>
-                            <li><a href="#">How to learn our</a></li>
-                            <li><a href="#">Our service</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Contct us</a></li>
-                        </ul>
+                <footer class="foot">
+                    <img src="./../assets/images/logo.jpg" alt="logo">
+                    <div class="container">
+                    <div class="row">
+                        <div class="footer-coloum">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="admission.html">Become an instructor</a></li>
+                                <li><a href="#">How to learn </a></li>
+                                <li><a href="#">Our service</a></li>
+                                <li><a href="About us.html">About us</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-coloum">
+                            <h4>Our Site</h4>
+                            <ul>
+                                <li><a href="Tailoring.html">Home</a></li>
+                                <li><a href="#">Online classes</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-coloum">
+                            <h4>Introduction</h4>
+                            <ul>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-coloum">
+                            <h4>follow us on</h4>
+                            <div class="icons"> 
+                                <a href="#"><em class="fab fa-facebook-f"></em></a>
+                                <a href="#"><em class="fab fa-twitter"></em></a>
+                                <a href="#"><em class="fab fa-instagram"></em></a>
+                                <a href="#"><em class="fab fa-google"></em></a> 
+                            </div>    
+                        </div>
                     </div>
-                    <div class="footer-coloum">
-                        <h4>Our Site</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Online classes</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
                     </div>
-                    <div class="footer-coloum">
-                        <h4>Introduction</h4>
-                        <ul>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-coloum">
-                        <h4>follow us on</h4>
-                        <div class="icons"> 
-                            <a href="#"><em class="fab fa-facebook-f"></em></a>
-                            <a href="#"><em class="fab fa-twitter"></em></a>
-                            <a href="#"><em class="fab fa-instagram"></em></a>
-                            <a href="#"><em class="fab fa-google"></em></a> 
-                        </div>    
-                    </div>
+                    <div class="copy"> 
+                    Copyrights by Modern tailors&copy;done by Kasi antony
                 </div>
-                </div>
-                <div class="copy"> 
-                Copyrights by Modern tailors&copy;done by Kasi antony
+                  </footer>
             </div>
-              </footer>
             </div>
+            <script src="./../assets/js/filter.js"></script>
         </body>
 </html>

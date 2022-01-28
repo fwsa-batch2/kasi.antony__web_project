@@ -100,3 +100,6 @@ body {
 .button a:hover {
     color: #7BD16A;
 }
+.fa-clipboard {
+    background-color: #ECF0F1;
+}

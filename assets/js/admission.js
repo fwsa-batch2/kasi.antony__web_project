@@ -40,6 +40,9 @@ function admin(event) {
         "Message": message,
     }
 
+    if(dob <= "18") {
+        alert("YOU ARE NOT ELIGIBLE TO APPLY");
+    }
 
     const isExist = isEmailALreadyExist(email);
 
