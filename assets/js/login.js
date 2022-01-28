@@ -9,7 +9,10 @@ function usercheck(event) {
 
     let array = JSON.parse(localStorage.getItem("USERDETAIL"));
 
-
+    if (array == null){
+        alert("please signup and login");
+        window.location.href="./../../pages/signup.html"
+    }
     for (let i of array) {
 
         if (i.userName == email && i.password == password) {
