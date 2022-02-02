@@ -1,13 +1,13 @@
 ### MODERN TAILORS
 
 ### Sonar cloud link
-#### https://sonarcloud.io/project/overview?id=fwsa-batch-02_moderntailorsapp-ui
+#### https://sonarcloud.io/project/overview?id=fwsa-batch2_kasi.antony__web_project
 
 ### Gitub link
-#### https://github.com/fwsa-batch-02/moderntailorsapp-ui
+#### https://github.com/fwsa-batch2/kasi.antony__web_project.git
 
 ### Netlify link
-#### https://moderntailorsapp-ui-kasiantony.netlify.app/
+#### https://fwsa-batch2.github.io/kasi.antony__web_project/
 
 ### Features
 
