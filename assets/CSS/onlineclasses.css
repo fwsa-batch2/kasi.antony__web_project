@@ -202,20 +202,7 @@ nav a.normal-1:hover{
     transform: scale(1.2);
     cursor: pointer;
 } 
-.col-1-5 .image{
-    height: auto;
-    width: 307px;
-    overflow: hidden;
-}
-.col-1-5 .image img{
-    width: 100%;
-    display: block;
-    transition:transform 0.6s;
-}
-.col-1-5 .image:hover img{
-    transform: scale(1.2);
-    cursor: pointer;
-} 
+
 #loadmore{
     margin-left: 49.9%;
 }
