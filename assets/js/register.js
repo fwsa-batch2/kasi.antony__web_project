@@ -1,10 +1,10 @@
 let array = [];
 function recoverDetails() {
 
-    let details=JSON.parse(localStorage.getItem("USERDETAIL"));
+    let userdetails=JSON.parse(localStorage.getItem("USERDETAIL"));
 
 
-    if ( details != null ) {
+    if ( userdetails != null ) {
         array=details;
 }
 
