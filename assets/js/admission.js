@@ -29,16 +29,7 @@ function admin(event) {
     const details = document.getElementById("details").value;
     const title = document.getElementById("title").value;
     const dob = document.getElementById("dob").value;
-    let userDetails = {
-        "Name":name,
-        "Date":dob,
-        "Email":email,
-        "Contact":number,
-        "Details":details,
-        "Text":text,
-        "Title": title,
-        "Message": message,
-    }
+
 
     if(dob <= "18") {
         alert("YOU ARE NOT ELIGIBLE TO APPLY");
@@ -51,6 +42,16 @@ function admin(event) {
         return;
     }
 
+    let userDetails = {
+        "Name":name,
+        "Date":dob,
+        "Email":email,
+        "Contact":number,
+        "Details":details,
+        "Text":text,
+        "Title": title,
+        "Message": message,
+    }
 
     array.push(userDetails);
     const accountdetails = JSON.stringify(array);
