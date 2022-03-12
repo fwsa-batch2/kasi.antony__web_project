@@ -11,7 +11,7 @@ function usercheck(event) {
 
     if (array == null){
         alert("please signup and login");
-        window.location.href="./../../pages/signup.html"
+        window.location.href="signup.html"
     }
     for (let i of array) {
 
