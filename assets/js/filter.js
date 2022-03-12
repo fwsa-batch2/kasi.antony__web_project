@@ -1,4 +1,8 @@
 function get1(x){
+    let userdetails=JSON.parse(localStorage.getItem("USERDETAIL"));
+
+    if( userdetails != null) {
+
     if ( x == "all" ) {
         document.getElementById("mactuto").style.display = "block";
         document.getElementById("mactuto1").style.display = "block";
@@ -27,7 +31,18 @@ function get1(x){
     }
 
 }
+
+else{
+    alert("Please Sign up and continue");
+    window.location.href="signup.html";
+}
+
+}
 function get2 (x) {
+    let userdetails=JSON.parse(localStorage.getItem("USERDETAIL"));
+
+    if( userdetails != null) {
+
     if (x== "machine"){
         document.getElementById("mactuto").style.display = "block";
         document.getElementById("mactuto1").style.display = "block";
@@ -66,8 +81,21 @@ function get2 (x) {
         document.getElementById("women").style.color = "#333";
         
     }
+
+}
+
+else{
+    alert("Please Sign up and continue");
+    window.location.href="signup.html";
+}
+
 }
 function get3 (x) {
+
+    let userdetails=JSON.parse(localStorage.getItem("USERDETAIL"));
+
+    if( userdetails != null) {
+
     if (x== "begin"){
         document.getElementById("mactuto").style.display = "block";
         document.getElementById("mactuto1").style.display = "block";
@@ -105,8 +133,21 @@ function get3 (x) {
         document.getElementById("gents").style.color = "#333";
         document.getElementById("women").style.color = "#333";
     }
+
+}
+
+else{
+    alert("Please Sign up and continue");
+    window.location.href="signup.html";
+}
+
 }
 function get4 (x) {
+
+    let userdetails=JSON.parse(localStorage.getItem("USERDETAIL"));
+
+    if( userdetails != null) {
+
     if (x== "men"){
         document.getElementById("mactuto").style.display = "none";
         document.getElementById("mactuto1").style.display = "none";
@@ -146,8 +187,21 @@ function get4 (x) {
         document.getElementById("machine").style.color = "#333";
         
     }
+
+}
+
+else{
+    alert("Please Sign up and continue");
+    window.location.href="signup.html";
+}
+
 }
 function get5 (x) {
+
+    let userdetails=JSON.parse(localStorage.getItem("USERDETAIL"));
+
+    if( userdetails != null) {
+
     if (x== "ladies"){
         document.getElementById("mactuto").style.display = "none";
         document.getElementById("mactuto1").style.display = "none";
@@ -187,8 +241,21 @@ function get5 (x) {
         document.getElementById("machine").style.color = "#333";
         
     }
+
+}
+
+else{
+    alert("Please Sign up and continue");
+    window.location.href="signup.html";
+}
+
 }
 function load (x) {
+
+    let userdetails=JSON.parse(localStorage.getItem("USERDETAIL"));
+
+    if( userdetails != null) {
+
     if (x == "addmore") {
         document.getElementById("kurti1").style.display="block";
         document.getElementById("kurti2").style.display="block";
@@ -204,4 +271,12 @@ function load (x) {
         document.getElementById("bag").style.display="block";
         document.getElementById("loadmore").style.display="none";
     }
+
+}
+
+else{
+    alert("Please Sign up and continue");
+    window.location.href="signup.html";
+}
+
 }

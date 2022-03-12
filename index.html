@@ -23,7 +23,8 @@
                      <nav>
 
                         <a href="./pages/Tailoring.html" class="normal">HOME</a>
-                        <a href="#online" class="normal">ONLINE CLASSES</a>
+                        <a href="./pages/onlineclasses.html" class="normal" onclick="if(localStorage.getItem(USERDETAIL) === null) { alert('Please Signup and continue');
+                        window.location.href='./pages/signup.html'} else { window.location.href='onlineclasses.html'}">ONLINE CLASSES</a>
                         <a href="./pages/About us.html" class="normal">ABOUT US</a>
                         <a href="./pages/login.html" class="active">LOG IN</a>
 

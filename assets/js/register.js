@@ -53,7 +53,7 @@ function register(event) {
     array.push(userDetails);
     localStorage.setItem("USERDETAIL",JSON.stringify(array));
 
-    window.location.href="./../../pages/login.html";
+    window.location.href="Tailoring.html";
 
 }
 
