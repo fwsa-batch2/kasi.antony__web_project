@@ -1,9 +1,9 @@
 ### MODERN TAILORS
 
-### Sonar cloud link
+### Sonar cloud link . 
 #### https://sonarcloud.io/project/overview?id=fwsa-batch2_kasi.antony__web_project
 
-### Gitub link
+### Gitub link .
 #### https://github.com/fwsa-batch2/kasi.antony__web_project.git
 
 ### Netlify link
